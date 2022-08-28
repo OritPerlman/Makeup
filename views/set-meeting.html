@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Making an appointment</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/">About Orit</a></li>
+                <li class="main-header__item"><a class="active" href="/admin/set-meeting">Set meeting</a></li>
+                <li class="main-header__item"><a class="active" href="/admin/contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="meeting-form" action="/admin/set-meeting" method="POST">
+            <div class="form-control">
+                <label for="name">Please enter your name</label>
+                <input type="text" name="name" id="title">
+                <label for="name">Please enter the date you want</label>
+                <input type="text" name="date" id="title">
+            </div>
+
+            <button type="submit">Set meeting</button>
+        </form>
+    </main>
+</body>
+
+</html>
